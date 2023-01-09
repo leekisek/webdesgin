@@ -1,0 +1,280 @@
+@charset "uft-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* font-family: 'Nanum Gothic', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer, section, article, aside, address, nav
+{
+    display:block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: none;
+}
+
+.cf::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.row {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.address {
+    font-style: normal;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+#header {
+    box-shadow: 0 2px 2px #ddd;
+}
+
+#logo {
+    float: left;
+    margin: 50px 0;
+}
+
+#logo img {
+    width: 200px;
+}
+
+#nav {
+    float: right;
+    margin-top: 70px;
+
+}
+
+
+#nav .depth1 {
+    width: 600px;
+}
+
+#nav .depth1>li {
+    float: left;
+    width: 33.33%;
+    position: relative;
+}
+
+#nav .depth1>li:hover {
+    background-color: #4298cc;
+    color: white;
+}
+
+#nav .depth1>li>a {
+    display: block;
+    text-align: center;
+    padding: 6px 0;
+}
+
+#nav .depth2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(253, 253, 253, 0.5);
+    color: black;
+    display: none;
+    z-index: 9;
+}
+
+#nav .depth1>li:hover .depth2 {
+    display: block;
+}
+
+#nav .depth2 li:hover {
+    background-color: #00ccff;
+    color: white;
+}
+
+#nav .depth2 a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+#section .article1 .slide {
+    display: none;
+    height: 600px;
+    background-size: cover;
+    position: relative;
+}
+
+#section .article1 .slide:first-child {
+    display: block;
+    background-image: url('../img2/images\(1\).jpg');
+}
+
+#section .article1 .slide:nth-child(2) {
+    background-image: url('../img2/images\(2\).jpg');
+}
+
+#section .article1 .slide:nth-child(3) {
+    background-image: url('../img2/images\(3\).jpg');
+}
+
+#section .article1 .slide p {
+    font-size: 24px;
+    color: #893700;
+    width: 600px;
+    padding: 13px 0;
+    background-color: #999;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -27px;
+    margin-left: -300px;
+}
+
+#section .arcticle2 {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+#section .arcticle2 .notice {
+    float: left;
+    width: 49%;
+}
+
+#section .arcticle2 .info {
+    float: right;
+    width: 49%;
+}
+
+#section .arcticle2 h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #999;
+    padding: 5px 0;
+
+}
+
+#section .arcticle2 .notice col:nth-child(1) {
+    width: 80%;
+}
+
+#section .arcticle2 .notice table {
+    font-size: 14.4px;
+}
+
+#section .arcticle2 .notice table th,
+#section .arcticle2 .notice table td {
+    padding: 5px;
+}
+
+
+#section .arcticle2 .notice table td:nth-child(1) {
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+#section .arcticle2 .notice table td:nth-child(2) {
+    text-align: center;
+}
+
+#section .arcticle2 .notice table tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+#section .arcticle2 .info {
+    text-align: center;
+}
+
+#section .arcticle2 .info >div {
+    margin-top:6px;
+}
+#section .arcticle3 {
+    text-align: center;
+    padding: 50px 0;
+}
+#section .arcticle3 > div 
+{
+    display : inline-block;
+    margin: 0 40px;
+}
+
+#section .arcticle3 > div img {
+    display:block;
+    margin-bottom:20px;
+}
+
+#section .arcticle3 > div button {
+    background-color: #999;
+    color:white;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size:20px;
+}
+
+#section .arcticle3 > div button:hover
+{
+    background-color: #900;
+    cursor: url(../img2/bg-note.png), auto;
+}
+
+#footer {
+    background-color: #4298cc;
+    color: #fff;
+}
+
+#footer .row {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+#footer .bmenu {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+
+}
+
+#footer .address {
+    float: right;
+    width: 50%;
+    font-size: 12px;
+}
+
+#footer .address pre {
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 1.5em;
+}
+
+#footer .bmenu a {
+    padding: 0 20px;
+}
+
